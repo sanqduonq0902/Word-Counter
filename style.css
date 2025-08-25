@@ -1,0 +1,100 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Main CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #FFF243, #FFF56E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Word Counter CSS */
+.word-counter{
+    background: #FFFFFF;
+    width: 900px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+}
+
+.counter-items{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 35px 110px;
+}
+
+.item span{
+    color: #0A0B10;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.item p{
+    color: #7c7c7c;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .5px;
+
+}
+
+.line{
+    background: #CACACA;
+    width: 90%;
+    height: 1px;
+}
+
+.text-container{
+    width: 100%;
+    padding: 35px 45px;
+}
+
+.text-container textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    color: #0A0B10;
+    font-size: 1em;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 830px) {
+    .word-counter{
+        flex-direction: row-reverse;
+    }
+
+    .counter-items {
+        width: 200px;
+        align-items: baseline;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .item{
+        padding: 10px 0;
+    }
+
+    .line {
+        width: 1px;
+        height: 380px;
+        margin-right: 20px;
+    }
+}
